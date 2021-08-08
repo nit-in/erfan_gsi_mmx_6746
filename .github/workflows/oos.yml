@@ -3,13 +3,13 @@ name: ERFAN_GSI
 on:
   push:
     tags:
-      - 'GSI*'
+      - 'OOS*'
 
   workflow_dispatch:
 
 jobs:
 
-  gsi:
+  oos:
     runs-on: ubuntu-latest
 
     env:
