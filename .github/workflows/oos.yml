@@ -37,7 +37,6 @@ jobs:
           git clone --recurse-submodules ${{ env.GSI_GH_URL }} ${{ env.GSI_REPO_DIR }}
           cd ${{ env.GSI_REPO_DIR  }}
           sed 's/DEBUG=false/DEBUG=true/g' -i url2GSI.sh
-          sed 's/exit 1/ /g' -i url2GSI.sh
           
       - name: start build
         env:
